@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="KqUr;iL/HCLNLU{$)-#`">Player</variable><variable type="KIND_SpriteKind" id="`+o|pg=w)ulu?1SRVJx7">Projectile</variable><variable type="KIND_SpriteKind" id="9b0(bZ2^,5cD}l|dZk)]">Food</variable><variable type="KIND_SpriteKind" id=",SwYO71Am*jUK[e_z-~L">Enemy</variable><variable id="p,BNgu%^d|x~0{DDsStr">mySprite</variable><variable id="W*{;a:3EVp2!1@UeQ`3u">hero-awsome</variable><variable id="-h+f9]zNM?LrQR/L);N)">projectile</variable><variable id=":I!Gx_kYIdXU,k$6F9.j">packers</variable></variables><block type="function_definition" x="10" y="-550"><mutation name="score" functionid="M$N[1vJhC71XHi/u*3qc"/><field name="function_name">score</field><statement name="STACK"><block type="hudChangeScoreBy"><value name="value"><shadow type="math_number"><field name="NUM">1</field></shadow></value></block></statement></block><block type="gameinterval" x="-590" y="-510"><value name="period"><shadow type="timePicker"><field name="ms">200</field></shadow></value><statement name="HANDLER"><block type="function_call"><mutation name="projectile" functionid="oi=BjbX1g+i`NO{L;T+F"/><next><block type="function_call"><mutation name="score" functionid="M$N[1vJhC71XHi/u*3qc"/></block></next></block></statement></block><block type="function_definition" x="-536" y="-317"><mutation name="projectile" functionid="oi=BjbX1g+i`NO{L;T+F"/><field name="function_name">projectile</field><statement name="STACK"><block type="variables_set"><field name="VAR" id=":I!Gx_kYIdXU,k$6F9.j">packers</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreateprojectilefromside"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 5 7 5 7 5 7 5 7 5 7 5 7 5 7 5 
+7 5 7 5 7 5 7 5 7 5 7 5 7 5 7 5 
+7 5 7 5 7 5 7 5 7 5 7 5 7 5 7 5 
+7 5 7 5 7 5 7 5 7 5 7 5 7 5 7 5 
+7 5 7 5 7 5 7 5 7 5 7 5 7 5 7 5 
+7 5 7 5 7 5 7 5 7 5 7 5 7 5 7 5 
+7 5 7 5 7 5 7 5 7 5 7 5 7 5 7 5 
+7 5 7 5 7 5 7 5 7 5 7 5 7 5 7 5 
+7 5 7 5 7 5 7 5 7 5 7 5 7 5 7 5 
+`</field></shadow></value><value name="vx"><shadow type="spriteSpeedPicker"><field name="speed">0</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker"><field name="speed">0</field></shadow></value></block></value></block></statement></block><block type="function_definition" x="230" y="-350"><mutation name="overlap" functionid="F:uzcUQc}fgZJqEI~7_7"/><field name="function_name">overlap</field><statement name="STACK"><block type="gameOver"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="win"><shadow type="toggleWinLose"><field name="win">false</field></shadow></value></block></statement></block><block type="pxt-on-start" x="-290" y="-130"><statement name="HANDLER"><block type="function_call"><mutation name="hero" functionid="K~gCap8gF^fjUHXIfKe0"/></block></statement></block><block type="function_definition" x="10" y="-130"><mutation name="hero" functionid="K~gCap8gF^fjUHXIfKe0"/><field name="function_name">hero</field><statement name="STACK"><block type="variables_set"><field name="VAR" id="W*{;a:3EVp2!1@UeQ`3u">hero-awsome</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
+7 8 7 8 7 8 7 8 7 8 7 8 7 8 7 8 
+7 8 7 8 7 8 7 8 7 8 7 8 7 8 7 8 
+7 8 7 8 7 8 7 8 7 8 7 8 7 8 7 8 
+7 8 7 8 7 8 7 8 7 8 7 8 7 8 7 8 
+7 8 7 8 7 8 7 8 7 8 7 8 7 8 7 8 
+7 8 7 8 7 8 7 8 7 8 7 8 7 8 7 8 
+7 8 7 8 7 8 7 8 7 8 7 8 7 8 7 8 
+7 8 7 8 7 8 7 8 7 8 7 8 7 8 7 8 
+7 8 7 8 7 8 7 8 7 8 7 8 7 8 7 8 
+7 8 7 8 7 8 7 8 7 8 7 8 7 8 7 8 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="W*{;a:3EVp2!1@UeQ`3u">hero-awsome</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">77</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">80</field></shadow></value><next><block type="game_control_sprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="W*{;a:3EVp2!1@UeQ`3u">hero-awsome</field></block></value><value name="vx"><shadow type="math_number"><field name="NUM">65</field></shadow></value><value name="vy"><shadow type="math_number"><field name="NUM">0</field></shadow></value></block></next></block></next></block></statement></block><block type="spritesoverlap" x="-610" y="130"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind"><field name="MEMBER">Projectile</field></shadow></value><statement name="HANDLER"><block type="function_call"><mutation name="overlap" functionid="F:uzcUQc}fgZJqEI~7_7"/></block></statement></block></xml>
